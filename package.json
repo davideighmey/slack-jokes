@@ -1,0 +1,43 @@
+{
+  "name": "jokeBot",
+  "version": "1.0",
+  "description": "A Slack bot that tells random jokes",
+  "keywords": ["Slack", "jokes", "fun", "humor"],
+  "main": "lib/norrisbot.js",
+  "bin": {
+    "norrisbot": "lib/joke-cli.js"
+  },
+  "scripts": {
+    "build": "./build.sh",
+    "start": "lib/joke-cli.js"
+  },
+  "author": {
+    "name": "David Eighmey",
+    "email": "deighmey11@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "@slack/client": "^3.9.0",
+    "chalk": "^1.1.3",
+    "one-liner-joke": "^1.0.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "codecov": "^2.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^19.0.2",
+    "pkg": "^3.0.0",
+    "request-promise": "^4.2.0",
+    "rimraf": "^2.6.1"
+  }
+}
