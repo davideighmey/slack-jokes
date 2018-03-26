@@ -1,3 +1,3 @@
 # slack-jokes
 
-random jokes for slack
+random jokes for slack. update me
