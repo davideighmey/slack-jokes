@@ -1,10 +1,7 @@
 /* eslint no-restricted-syntax: "off" */
+export const isMessage = event => Boolean(event.type === 'message' && event.text);
 
-export const isMessage = event =>
-  Boolean(event.type === "message" && event.text);
-
-export const isMessageToChannel = message =>
-  typeof message.channel === "string";
+export const isMessageToChannel = message => typeof message.channel === 'string';
 
 export const isFromUser = (event, userId) => event.user === userId;
 
@@ -21,7 +18,7 @@ export const messageContainsText = (message, possibleTexts) => {
 };
 
 export const filterJokesByCategories = (jokes, categories) =>
-  jokes.filter(joke => {
+  jokes.filter((joke) => {
     if (joke.categories.length === 0) {
       return true;
     }
